@@ -1,10 +1,12 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import Fia from "../assets/images/fia.png";
 import FE from "../assets/images/formula-e-logo.png";
 
 const Header = () => {
+  const navigate = useNavigate();
+
   return (
-    <>
+    <div>
       <header className="text-black flex justify-center h-14 items-center font-nats w-auto">
         <nav
           className="flex justify-between items-center"
@@ -31,7 +33,7 @@ const Header = () => {
           </div>
 
           <div id="middle">
-            <img src={FE} alt="formula e logo" className="h-8" />
+            <img src={FE} alt="formula e logo" className="h-8" onClick={() => {navigate("/")}} style={{cursor: "pointer"}}/>
           </div>
 
           <div id="right" className="flex gap-3 items-center">
@@ -100,7 +102,7 @@ const Header = () => {
           />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

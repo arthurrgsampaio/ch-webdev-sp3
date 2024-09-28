@@ -63,7 +63,7 @@ const Home = () => {
                     paddingLeft: "7rem",
                 }}
             >
-                <div className="flex justify-around items-center gap-12">
+                <div className="flex justify-around items-center gap-12 mb-10">
                     <Card number={2} title={"FIQUE DE OLHO NA PERFORMANCE DO SEU PILOTO ESCOLHIDO"} description={"Utilize das estatísticas dísponíveis dos pilotos e de seus carros na aba de GARAGEM, compare-as com as dos pilotos de diferentes equipes e seus relativos preços para conseguir uma maior chance de vitória, é possível também checar o desempenho de corridas anteriores e as estatísticas de diferentes pistas da Fórmula-E."} mTop={"5rem"}/>
                     <Card number={3} title={"SOME ASCOINS PARA DESBLOQUEAR PRÊMIOS E PILOTOS"} description={"Junte ASCoins para poder reinvidicar prêmios e desbloquear diferentes pilotos e carros. Além de ganhar pontos pela vitória de seu piloto escolhido, pontos de login diário serão depositados automaticamente ao acessar o site com o login efetuado."} mTop={"5rem"}/>
                 </div>

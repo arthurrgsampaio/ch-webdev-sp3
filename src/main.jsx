@@ -9,7 +9,7 @@ const router = createBrowserRouter([
     path: '/',
     element: <App/>,
     children: [
-      {index:true, element: <Home />},
+      {index:true, element: <Home />, path: '/'},
       // {path:'*', element: <PageNotFound/>}
     ]
   }
@@ -17,6 +17,6 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <>
-    <RouterProvider router={router}/>
+    <RouterProvider router={router} />
   </>
 )

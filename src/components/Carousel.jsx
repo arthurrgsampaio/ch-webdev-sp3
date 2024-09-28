@@ -15,7 +15,7 @@ const Carousel = () => {
   switch (counter) {
     case 0:
       return (
-        <div style={{ position: "relative" }} className="flex-row">
+        <div style={{ position: "relative" }} className="flex">
           <div
             className="heroText"
             style={{
@@ -32,7 +32,7 @@ const Carousel = () => {
             }}
           >
             <h1 className="text-white">ASPHALT</h1>
-            <h1 className="text-red-600">ACES</h1>
+            <h1 className="text-projRed">ACES</h1>
           </div>
 
           <img
@@ -43,7 +43,7 @@ const Carousel = () => {
       );
     case 1:
       return (
-        <div style={{ position: "relative" }} className="flex-row">
+        <div style={{ position: "relative" }} className="flex">
           <div
             className="heroText"
             style={{
@@ -60,7 +60,7 @@ const Carousel = () => {
             }}
           >
             <h1 className="text-white">ASPHALT</h1>
-            <h1 className="text-red-600">ACES</h1>
+            <h1 className="text-projRed">ACES</h1>
           </div>
 
           <img
@@ -71,7 +71,7 @@ const Carousel = () => {
       );
     case 2:
       return (
-        <div style={{ position: "relative" }} className="flex-row">
+        <div style={{ position: "relative" }} className="flex">
           <div
             className="heroText"
             style={{
@@ -88,7 +88,7 @@ const Carousel = () => {
             }}
           >
             <h1 className="text-white">ASPHALT</h1>
-            <h1 className="text-red-600">ACES</h1>
+            <h1 className="text-projRed">ACES</h1>
           </div>
 
           <img

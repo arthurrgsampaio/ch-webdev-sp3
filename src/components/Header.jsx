@@ -68,7 +68,7 @@ const Header = () => {
 
       <div
         id="sub-header"
-        className="text-white bg-blue-800 flex justify-between h-14 items-center font-nats w-auto"
+        className="text-white bg-projBlue flex justify-between h-14 items-center font-nats w-auto"
         style={{ padding: "0 1.5rem" }}
       >
         <NavLink to={"/garagem"}>GARAGEM</NavLink>

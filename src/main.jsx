@@ -4,6 +4,7 @@ import App from './App';
 import "./index.css";
 import Home from './pages/Home';
 import PageNotFound from './pages/PageNotFound';
+import Register from './pages/Register';
 
 const router = createBrowserRouter([
   {
@@ -11,6 +12,7 @@ const router = createBrowserRouter([
     element: <App/>,
     children: [
       {index:true, element: <Home />, path: '/'},
+      {path:'/registro', element: <Register/>},
       {path:'*', element: <PageNotFound/>}
     ]
   }

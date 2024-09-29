@@ -31,7 +31,7 @@ const Home = () => {
                 />
                 <div
                     className="flex justify-between"
-                    style={{ padding: "0 5rem", width: "100%" }}
+                    style={{ padding: "0 5rem", width: "100%", height: "34rem" }}
                 >
                     <div
                         id="howToPlay"

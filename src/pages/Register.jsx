@@ -8,8 +8,9 @@ const Register = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        localStorage.setItem(`${firstName} ${surname}`, password);
-        localStorage.setItem(email, password);
+        const name = `${firstName} ${surname}`;
+        localStorage.setItem(name, JSON.stringify({password, name}));
+        localStorage.setItem(email, JSON.stringify({password, name}));
         setEmail("");
         setPassword("");
         setFirstName("");

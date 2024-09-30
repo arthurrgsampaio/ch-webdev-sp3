@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import PageNotFound from './pages/PageNotFound';
 import Register from './pages/Register';
 import Login from './pages/Login';
+import WIP from './pages/WIP';
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
       {index:true, element: <Home />, path: '/'},
       {path:'/registro', element: <Register/>},
       {path:'/login', element: <Login/>},
+      {path:'/garagem', element: <WIP/>},
+      {path:'/noticias', element: <WIP/>},
+      {path:'/loja', element: <WIP/>},
+      {path:'/videos', element: <WIP/>},
       {path:'*', element: <PageNotFound/>}
     ]
   }

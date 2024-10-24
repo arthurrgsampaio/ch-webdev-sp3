@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { NavLink, useNavigate } from 'react-router-dom';
 import BGHEADER from '../assets/background/background-header-garage.png'
 import HERO from '../assets/images/hero3.jpg'
 
@@ -30,9 +31,9 @@ const CarreiraHeader = () => {
 
         <nav className="nav-container bg-gray-300 h-20 mb-10">
           <div className="flex gap-2 justify-center">
-            <a href="#jogos" className="relative flex justify-center border-projRed border-b-8 text-projRed text-3xl font-semibold bg-gray-200 h-28 p-8" style={{ width: "625px"}}>JOGOS</a>
-            <a href="#escuderia" className="relative flex justify-center border-black border-b-8 text-black text-3xl font-semibold bg-gray-200 h-24 p-6" style={{ width: "625px"}}>MINHA ESCUDERIA</a>
-            <a href="#pilotos" className="relative flex justify-center border-black border-b-8 text-black text-3xl font-semibold bg-gray-200 h-24 p-6" style={{ width: "625px"}}>MEUS PILOTOS</a>
+              <NavLink to="/garagem" className="relative flex justify-center border-projRed border-b-8 text-projRed text-3xl font-semibold bg-gray-200 h-28 p-8" style={{ width: "625px"}}>JOGOS</NavLink>
+              <NavLink to="/escuderia" className="relative flex justify-center border-black border-b-8 text-black text-3xl font-semibold bg-gray-200 h-24 p-6" style={{ width: "625px"}}>MINHA ESCUDERIA</NavLink>
+              <NavLink to="/pilotos" className="relative flex justify-center border-black border-b-8 text-black text-3xl font-semibold bg-gray-200 h-24 p-6" style={{ width: "625px"}}>MEUS PILOTOS</NavLink>
           </div>
         </nav>
         </>

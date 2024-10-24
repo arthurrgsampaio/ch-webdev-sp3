@@ -21,6 +21,9 @@ export default {
       indigo: colors.indigo,
       yellow: colors.yellow,
       blue: colors.blue,
+      garageBlue: "#152029",
+      garageOcre: "#710000",
+      garageOrange: "#D73E22",
     },
     extend: {
       fontFamily: {

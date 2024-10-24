@@ -7,6 +7,7 @@ import PageNotFound from './pages/PageNotFound';
 import Register from './pages/Register';
 import Login from './pages/Login';
 import WIP from './pages/WIP';
+import Garagem from './pages/Garagem';
 
 const router = createBrowserRouter([
   {
@@ -16,7 +17,7 @@ const router = createBrowserRouter([
       {index:true, element: <Home />, path: '/'},
       {path:'/registro', element: <Register/>},
       {path:'/login', element: <Login/>},
-      {path:'/garagem', element: <WIP/>},
+      {path:'/garagem', element: <Garagem/>},
       {path:'/noticias', element: <WIP/>},
       {path:'/loja', element: <WIP/>},
       {path:'/videos', element: <WIP/>},

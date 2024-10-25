@@ -2,6 +2,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 import Fia from "../assets/images/fia.png";
 import FE from "../assets/images/formula-e-logo.png";
 
+
 const Header = () => {
     const navigate = useNavigate();
     const auth = localStorage.getItem("auth");
@@ -129,7 +130,7 @@ const Header = () => {
                 className="text-white bg-projBlue flex justify-between h-14 items-center font-nats w-auto"
                 style={{ padding: "0 1.5rem" }}
             >
-                <NavLink to={"/garagem"}>GARAGEM</NavLink>
+                <NavLink to={"/Garagem"}>GARAGEM</NavLink>
                 <div className="relative rounded-md shadow-sm">
                     <div
                         id="icon"

@@ -24,6 +24,7 @@ export default {
       garageBlue: "#152029",
       garageOcre: "#710000",
       garageOrange: "#D73E22",
+      garageGrey: "#567383CC",
     },
     extend: {
       fontFamily: {

@@ -90,9 +90,7 @@ function Garagem() {
             <div className="flex items-center bg-gray-200 h-40 w-full mt-12">
               <h1 className='font-semibold ml-14 text-7xl'>MODOS DE JOGO</h1>
             </div>            
-            <div className="flex flex-row items-center gap-16 w-full justify-center mt-14">
-              <div className="flex items-center rounded-2xl w-[700px] pl-6 gap-4">
-              </div>
+            <div className="flex justify-center w-full pt-32 mt-14">
                 <button
                 id="encontrarPartida"
                 className="h-44 w-[500px] bg-projBlue rounded-2xl border-r-8 border-b-8 border-blue-950 flex items-center justify-center"

@@ -8,6 +8,7 @@ import Register from './pages/Register';
 import Login from './pages/Login';
 import WIP from './pages/WIP';
 import Garagem from './pages/Garagem';
+import Partida from './pages/Partida';
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,7 @@ const router = createBrowserRouter([
       {path:'/registro', element: <Register/>},
       {path:'/login', element: <Login/>},
       {path:'/garagem', element: <Garagem/>},
+      {path:'/partida', element: <Partida/>},
       {path:'/noticias', element: <WIP/>},
       {path:'/loja', element: <WIP/>},
       {path:'/videos', element: <WIP/>},

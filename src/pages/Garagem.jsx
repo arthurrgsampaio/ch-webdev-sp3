@@ -7,8 +7,16 @@ import ESCUDERIA from '../assets/images/escuderia-foto.png'
 import PILOTO from '../assets/images/andretti-jakeDennis.png'
 import CarreiraHeader from '../components/CarreiraHeader'
 import HERO from '../assets/images/hero3.jpg'
+import { useNavigate } from 'react-router-dom';
 
 function Garagem() {
+
+    const navigate = useNavigate();
+
+    const handleNavigate = () => {
+      navigate('/partida');
+    };
+
     return (
       <div id= "garagem-page" className="flex flex-col h-auto">
         
@@ -83,18 +91,14 @@ function Garagem() {
               <h1 className='font-semibold ml-14 text-7xl'>MODOS DE JOGO</h1>
             </div>            
             <div className="flex flex-row items-center gap-16 w-full justify-center mt-14">
-              <div className="flex items-center rounded-2xl bg-garageOcre h-52 w-[700px] pl-6 gap-4">
-                <div className="bg-garageOrange rounded-2xl h-40 w-[600px] flex items-center justify-center">
-                  <h1 className='text-6xl font-semibold'>Torneio Comum</h1>
-                </div>
-                <button id='trocarModo'>
-                  <svg width="37" height="25" viewBox="0 0 37 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M17.2828 15.7265C18.1637 16.3833 19.6136 16.3744 20.4808 15.7048L30.2572 8.15544C30.5376 7.93896 30.5051 7.60993 30.1847 7.4205C29.8643 7.23107 29.3773 7.25302 29.097 7.4695L19.3206 15.0188C19.0604 15.2198 18.6868 15.2221 18.4252 15.027L8.2795 7.46272C7.99361 7.24958 7.50615 7.23337 7.19071 7.42653C6.87527 7.6197 6.85128 7.94907 7.13716 8.16223L17.2827 15.7265L17.2828 15.7265Z" fill="black"/>
-                  </svg>                
-                </button>
+              <div className="flex items-center rounded-2xl w-[700px] pl-6 gap-4">
               </div>
-              <button id='encontrarPartida' className="h-44 w-[500px] bg-projBlue rounded-2xl border-r-8 border-b-8 border-blue-950 flex items-center justify-center">
-                <h1 className='text-white text-3xl font-semibold'>ENCONTRAR PARTIDA</h1>
+                <button
+                id="encontrarPartida"
+                className="h-44 w-[500px] bg-projBlue rounded-2xl border-r-8 border-b-8 border-blue-950 flex items-center justify-center"
+                onClick={handleNavigate}
+              >
+                <h1 className="text-white text-3xl font-semibold">ENCONTRAR PARTIDA</h1>
               </button>
             </div>
           </div>

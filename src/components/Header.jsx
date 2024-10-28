@@ -21,7 +21,9 @@ const Header = () => {
                 >
                     <div id="left" className=" gap-3 flex items-center">
                         <div id="fia-logo">
-                            <img src={Fia} alt="FIA" className="h-8" />
+                            <img src={Fia} alt="FIA" className="h-8" onClick={() => {
+                                navigate("/");
+                            }} style={{ cursor: "pointer" }}/>
                         </div>
                         <p className="text-4xl">|</p>
                         <div id="nav-links">
@@ -37,18 +39,6 @@ const Header = () => {
                                 </li>
                             </ul>
                         </div>
-                    </div>
-
-                    <div id="middle">
-                        <img
-                            src={FE}
-                            alt="formula e logo"
-                            className="h-8"
-                            onClick={() => {
-                                navigate("/");
-                            }}
-                            style={{ cursor: "pointer" }}
-                        />
                     </div>
 
                     <div id="right" className="flex gap-3 items-center">
